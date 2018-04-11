@@ -362,8 +362,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-circle-o"></i>All Users</a></li>
-            <li><a href=""><i class="fa fa-circle-o"></i>Create User</a></li>
+            <li><a href="/users"><i class="fa fa-circle-o"></i>All Users</a></li>
+            <li><a href="/create-user"><i class="fa fa-circle-o"></i>Create User</a></li>
           </ul>
         </li>
         <li class="treeview">

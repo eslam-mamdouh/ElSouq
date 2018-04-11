@@ -22,3 +22,9 @@ Route::get('/admin', function () {
 Route::get('/orders', function () {
     return view('admin.orders');
 });
+Route::get('/users', function () {
+    return view('admin.users');
+});
+Route::get('/create-user', function () {
+    return view('admin.create-user');
+});
