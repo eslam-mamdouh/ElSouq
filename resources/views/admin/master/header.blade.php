@@ -337,7 +337,7 @@
         <li class="">
           
           <a href="/admin">
-            <i class="fa fa-laptop"></i>
+            <i class="fa fa-edit"></i>
             <span>Statistics</span>
           </a>
         </li>
@@ -356,7 +356,7 @@
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-edit"></i> <span>Users</span>
+            <i class="fa fa-user"></i> <span>Users</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -373,10 +373,6 @@
               <i class="fa fa-ang le-left pull-right"></i>
             </span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href=""><i class="fa fa-circle-o"></i> Data tables</a></li>
-          </ul>
         </li>
         <li>
           <a href="pages/mailbox/mailbox.html">
