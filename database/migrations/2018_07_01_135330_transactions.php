@@ -15,13 +15,13 @@ class Transactions extends Migration
     {
         //
 
-        Schema::create('Transactions', function (Blueprint $table) {
+        Schema::create('transactions', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('product_id');
-            $table->integer('user_id');
+            $table->integer('product_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->integer('cost');
-            $table->foreign('product_id')->references('id')->on('Products')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('user_id')->references('id')->on('Users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('product_id')->references('id')->on('products');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
 
         });

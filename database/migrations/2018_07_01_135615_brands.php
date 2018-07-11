@@ -14,11 +14,11 @@ class Brands extends Migration
     public function up()
     {
         //
-        Schema::create('Brands', function (Blueprint $table) {
+        Schema::create('brands', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('category_id');
-            $table->foreign('category_id')->references('id')->on('Categories')->onDelete('cascade')->onUpdate('cascade');
+            $table->integer('category_id')->unsigned();
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
 
         });
