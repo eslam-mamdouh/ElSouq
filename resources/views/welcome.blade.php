@@ -9,7 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Styles -->
         <style>
             html, body {
@@ -88,8 +88,30 @@
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <p id="ajax" >ajax</p>
                 </div>
             </div>
         </div>
+
+        <script>
+            $(document).ready(function(){
+
+                $("#ajax").click(function(){
+
+                    $.ajax({
+                        url:"/ajax",
+                        type:"get"
+                    })
+                    .done(function(res){
+                        console.log(res);
+                    })
+
+
+                })
+
+
+            })
+        
+        </script>
     </body>
 </html>

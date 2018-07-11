@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/ajax', function () {
+    return response()->json(["msg"=>"done"]);
+});
+
 Route::get('/admin', function () {
     return view('admin.admin');
 });
