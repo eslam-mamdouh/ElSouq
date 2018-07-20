@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
 Route::get('/ajax', function () {
     return response()->json(["msg"=>"done"]);
 });
@@ -31,4 +33,20 @@ Route::get('/users', function () {
 });
 Route::get('/create-user', function () {
     return view('admin.create-user');
+});
+
+
+Route::get('/t-men', function () {
+    return view('pages.t-men');
+});
+
+Route::get('/men', function () {
+    return view('pages.men');
+});
+
+Route::get('/t-women', function () {
+    return view('pages.t-women');
+});
+Route::get('/women', function () {
+    return view('pages.women');
 });
