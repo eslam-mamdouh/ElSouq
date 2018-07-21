@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/body', function () {
+    return view('body');
 });
 
 Route::get('/ajax', function () {
